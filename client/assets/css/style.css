@@ -351,15 +351,20 @@ a {
 
     /*Barros*/
     /*Formulario*/
-    .title-formulario {
-        margin-top: 1.5em;
+    @media (max-width: 1280px) {
+        form{
+            width: 80vw;
+            padding: 0.5em;
+        }
     }
 
-    .title-formulario h1 {
+    .title-formulario{
+        margin-top: 1.5em;
+    }
+    .title-formulario h1{
         text-align: center;
         text-transform: uppercase;
     }
-
     form {
         margin: 0 auto;
         width: 50vw;
@@ -368,34 +373,28 @@ a {
         background-color: #FFFBFB;
         border-radius: 1em;
     }
-
-    form div+div {
+    form div + div {
         margin-top: 1em;
     }
-
-    form div input {
+    form div input{
         width: 95%;
         margin-left: 2.5%;
         border: 1px solid #5B0679;
         font-size: 1.2em;
     }
-
-    form div input[id=msg] {
+    form div input[id=msg]{
         height: 250px;
     }
-
     label {
         display: inline-block;
         width: 100%;
         text-align: left;
         margin-bottom: 0.2em;
     }
-
-    form button {
+    form button{
         float: right;
         margin-top: 1.5em;
-        background-color: #F67804;
-        /* Green */
+        background-color: #F67804; /* Green */
         border: none;
         border-radius: 10% 20%;
         color: white;
@@ -404,9 +403,8 @@ a {
         text-decoration: none;
         font-size: 16px;
     }
-
-    form button:hover {
-        filter: brightness(85%);
+    form button:hover{
+        filter:brightness(85%);
         cursor: pointer;
     }
 }
